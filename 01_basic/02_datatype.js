@@ -22,13 +22,7 @@
 // console.log(typeof(undefine))// undefined
 // console.log(typeof(Symbol))// function
 
-// 2 type Datatype
 
-// Primative Datatype :
-//     String, Number , BogInt , Boolean , Null , undefined ,Symbol  (no float datatype , float value comes under Number datatype)
-
-// Non-Primtive datatype :
-//     Array , Object , Function
 
 
 // let tump =null;
@@ -46,13 +40,27 @@
     
 // }
 
-    
+
+// ====================== Types of DataTypes ==================================================================
+
+// 2 type Datatype
+
+// Primative Datatype :
+//     String, Number , BogInt , Boolean , Null , undefined ,Symbol  (no float datatype , float value comes under Number datatype)
+
+// Non-Primtive datatype :
+//     Array , Object , Function
+
+
+// ====================== Symbol ==================================================================
+
 // const num1=Symbol("abc");
 // const num2=Symbol("abc");
 // console.log(num1);        // Symbol(abc)
 // console.log(num2);        // Symbol(abc)
 // console.log(num1==num2);  //false
 
+// ====================== Array ==================================================================
 
 // Array
 // const heros=['salman','srk','ajay devgan','vijay thalapati'];
@@ -60,7 +68,7 @@
 
 
 
-// Object
+// ====================== Object ==================================================================
 // const obj={
 //     hero:"Vijay Thalapati",
 //     heroin:"Anuska sharma",
@@ -69,6 +77,7 @@
 // console.log(obj);           //{ hero: 'Vijay Thalapati', heroin: 'Anuska sharma', cost: 50000 }
 
 
+// ====================== Function ==================================================================
 
 // function
 // let fun=function(){
@@ -77,5 +86,12 @@
 // console.log(fun());         //This is Function
 
 
+// ======================Memory Allocation ==================================================================
+
+// For all Premative Datatype Stack memory is used
+
+// For all Non-Premative Datatype Heap memory is used
+
+// Stack (Premative)  Heap (Non-Premative)
 
 
