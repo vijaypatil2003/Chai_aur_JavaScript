@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOm | Chai Aur Code</title>
+</head>
+<body style="background-color:black;">
+    <div class="parent" style="color: aqua;">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
+    </div>
+</body>
+<script>
+// ============================== DOM Traversal (Parent, Children, Siblings) ==============================
+
+// // Select parent element
+// const parent = document.querySelector(".parent");
+// console.log(parent);                      // logs parent element
+// console.log(parent.children);             // HTMLCollection of children
+
+// // Loop through children and log their innerHTML
+// for (let index = 0; index < parent.children.length; index++) {
+//     console.log(parent.children[index].innerHTML);
+// }
+
+// // Style specific children
+// parent.children[1].style.color = "red";      // 2nd child → red
+// parent.children[2].style.color = "orange";   // 3rd child → orange
+
+// // Access first and last child
+// console.log(parent.firstElementChild);  
+// console.log(parent.lastElementChild);
+
+// // Work with a specific child element
+// const dayone = document.querySelector(".day");
+// console.log(dayone);
+// console.log(dayone.nextElementSibling);   // next sibling element
+// console.log(dayone.parentElement);        // parent element
+
+// // All child nodes (includes text, comments, line breaks)
+// console.log("nodes: ", parent.childNodes);
+</script>
+
+</html>

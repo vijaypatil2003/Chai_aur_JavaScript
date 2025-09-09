@@ -11,7 +11,7 @@
 // console.log(User["name"]);      // Vijay
 
 
-// ============================== Updating Object Properties & Object.freeze() ==============================
+// ============================== Updating Object Properties & Object.freeze() ==========================================================================================
 // console.log(User);              
 // User.email = "VijayUpdate@gmail.com"
 // User.age = 22;
@@ -20,7 +20,7 @@
 // Object.freeze(User);            // can not be changed any value inside User object
 
 
-// ============================== Adding Methods to Objects ============================================================
+// ============================== Adding Methods to Objects ========================================================================================================================
 // User.greeting=function(){
 //     console.log("Good Morning!!!"); 
 // }
@@ -37,9 +37,7 @@
 // console.log(User.greetingthree());               // Good Morning.. Vijay
 
 
-
-// ======================================================================================================================================================
-
+// ============================== Creating Empty Object and Adding Properties ==========================================================================================
 // const tinderUser ={};
 // tinderUser.name= "Vijay";
 // tinderUser.age = 22;
@@ -47,7 +45,7 @@
 // console.log(tinderUser);                    // { name: 'Vijay', age: 22, email: 'Vijay@tinder.com' }
 
 
-// ======================================================================================================================================================
+// ============================== Nested Objects and Accessing Properties ==========================================================================================
 // const User = {
 //     mail : "vijay@user.com",
 //     age:30,
@@ -60,8 +58,7 @@
 // console.log(User["name"]["lname"]);     // patil
 
 
-
-// ======================================================================================================================================================
+// ============================== Merging Objects ==========================================================================================
 //  const obj1={1:"a", 2:'b'};
 //  const obj2={3:'c', 4:'d'};
 //  const obj3={5:'e', 6:'f'};
@@ -69,8 +66,6 @@
 
 //  const obj4= {obj1,obj2}
 //  console.log(obj4);             // { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
-
-
 
 // Object.assign(target, ...sources)
 // target → The object where properties will be copied.
@@ -80,19 +75,15 @@
 // console.log( Merge);          // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
 // console.log(obj1);            // { '1': 'a', '2': 'b' }     property of all three obj copied to {}
 
- 
 // const objMerge = Object.assign (obj1,obj2,obj3);
 // console.log(objMerge);          // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
-// console.log(obj1);              // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
-                                   // property of all three obj copied to obj 1
-
+// console.log(obj1);              // obj1 mutated → contains all merged properties
 
 // const objmerge={...obj1,...obj2,...obj3}
 // console.log(objmerge);              // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
 
-// ======================================================================================================================================================
- 
-// const User = [
+
+// ============================== Array of Objects and Accessing ===========================================================================================================
 //     { name : "Vijay",
 //         id : 1
 //     },
@@ -104,11 +95,11 @@
 //     }
 // ]
 
-// console.log(User[0].name);      // Vijay    object inside array so variable[index].key
+// console.log(User[0].name);      // Vijay
 // console.log(User[1]["id"]);     // 2
 
 
-// ======================================================================================================================================================
+// ============================== Object Utility Methods (keys, values, entries) ===========================================================================================================
 // const tinderUser ={};
 // tinderUser.name= "Vijay";
 // tinderUser.age = 22;
@@ -119,24 +110,19 @@
 // console.log(Object.entries(tinderUser));    // [ [ 'name', 'Vijay' ], [ 'age', 22 ], [ 'email', 'Vijay@tinder.com' ] ]
 
 
+// ============================== Destructuring Objects ===========================================================================================================
+// Destructuring lets you unpack values from objects/arrays into variables easily
 
-// ======================================================================================================================================================
-                                        // Destrusture
-// ======================================================================================================================================================
+// const course={
+//     coursename : "JS",
+//     price : 999,
+//     teacher : "Hiesh sir chai with code"
+// }
 
-// Destructuring is a shortcut in JavaScript that lets you unpack values from objects or arrays into variables in a clean way.
-    // Object destructuring: const {prop} = object;                                    Array destructuring: const [a,b] = array;
+// console.log(course.teacher)         // Hiesh sir chai with code
 
-const course={
-    coursename : "JS",
-    price : 999,
-    teacher : "Hiesh sir chai with code"
-}
+// const {teacher}=course;
+// console.log(teacher);               // Hiesh sir chai with code
 
-console.log(course.teacher)         // Hiesh sir chai with code
-
-const {teacher}=course;
-console.log(teacher);               // Hiesh sir chai with code
-
-const {teacher :guide } = course
-console.log(guide);                 // Hiesh sir chai with code
+// const {teacher :guide } = course
+// console.log(guide);                 // Hiesh sir chai with code
